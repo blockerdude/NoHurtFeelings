@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/account_creation_title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/account_creation_intro"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/acct_name_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/account_creation_title_TextView"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/acct_name_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/acct_name_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acct_password_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/acct_name_LinearLayout"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/acct_password_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/acct_password_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acct_email_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/acct_password_LinearLayout"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/acct_email_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/acct_email_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acct_age_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/acct_email_LinearLayout"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/acct_age_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textSize="24sp" />
+        
+        <EditText 
+            android:id="@+id/acct_age_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_buttons_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/acct_age_LinearLayout"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/create_account_Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="createAccount"
+            android:text="@string/create_account" />
+
+        <Button
+            android:id="@+id/login_account_Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loginAccount"
+            android:text="@string/login" />
+    </LinearLayout>
+
+</RelativeLayout>

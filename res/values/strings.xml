@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">No Hurt Feelings</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="join_room">Join Room</string>
+    <string name="host_room">Host Room</string>
+    <string name="account">Account</string>
+    <string name="jr_description">Join a hosted room</string>
+    <string name="hr_description">Become the host of a new game</string>
+    <string name="acct_description">Edit your account and question lists.</string>
+    <string name="jr_introduction">Enter in the requested information to connect</string>
+    <string name="room_name_descriptor">Enter the room name below</string>
+    <string name="room_password_descriptor">Enter the password for the room below</string>
+    <string name="user_name_descriptor">Enter the name others in the room will see </string>
+    <string name="back">back</string>
+    <string name="connect">Connect to Room</string>
+    <string name="user_name_description">Default User Name:</string>
+    <string name="account_name">Account Name:</string>
+    <string name="account_options">Account Options</string>
+    <string name="question_lists">Question Lists</string>
+    <string name="question_list_introduction">Create and edit your question lists</string>
+    <color name="yellow">#FFFF66</color>
+    <color name="purple">#CC00FF</color>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="eql_introduction">Edit this question list</string>
+    <string name="edit_question_list">Edit Question List</string>
+    <string name="host_room_intro">Fill in the fields to host a game</string>
+    <string name="room_name">Room Name</string>
+    <string name="password">Password:</string>
+    <string name="user_name">User Name</string>
+    <string name="question_list">Question List</string>
+    <string name="account_creation_intro">Please create an account or log in</string>
+    <string name="email">Email:</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="age">Age</string>
+    <string name="account_creation">Account Creation</string>
+
+</resources>

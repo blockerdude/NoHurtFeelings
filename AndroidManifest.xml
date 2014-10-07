@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nohurtfeelings"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.nohurtfeelings.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.JoinRoom"
+            android:label="@string/join_room" >
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.AccountOptions"
+            android:label="@string/account_options" >
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.EditQuestionList"
+            android:label="@string/edit_question_list" >
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.QuestionListsFragment"
+            android:label="@string/question_lists" >
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.HostRoom"
+            android:label="@string/host_room" >
+        </activity>
+        <activity
+            android:name="com.example.nohurtfeelings.AccountCreation"
+            android:label="@string/account_creation" >
+        </activity>
+    </application>
+
+</manifest>

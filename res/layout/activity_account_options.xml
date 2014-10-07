@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/account_introduction_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/acct_description"
+        android:textSize="24sp" />
+    
+    
+    <LinearLayout
+        android:id="@+id/account_name_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/account_introduction_TextView"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/account_name_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/account_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/account_name_EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:inputType="none"
+            android:text="@string/action_settings"
+            android:textSize="20sp" />
+    </LinearLayout>
+      
+
+    <LinearLayout
+        android:id="@+id/default_userName_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/account_introduction_TextView"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/default_userName_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/user_name_description"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/default_userName_EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="back"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/question_lists_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/default_userName_linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="editQuestionLists"
+        android:text="@string/question_lists" />
+
+</RelativeLayout>

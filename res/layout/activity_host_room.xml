@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/host_room_title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/host_room_intro"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/room_name_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/host_room_title_TextView"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/room_name_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/room_name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/room_name_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_password_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/room_name_LinearLayout"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/room_password_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/room_password_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_name_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/room_password_LinearLayout"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/user_name_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/user_name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/user_name_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_list_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_below="@id/user_name_LinearLayout"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/question_list_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/question_list"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/question_list_Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerStyle="@android:style/Widget.Spinner.DropDown" />
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/back_Button"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/back"
+        android:onClick="back" />
+
+</RelativeLayout>
