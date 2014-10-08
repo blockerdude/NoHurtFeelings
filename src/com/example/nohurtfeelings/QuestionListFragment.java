@@ -14,7 +14,7 @@ public class QuestionListFragment extends Fragment {
 		View questionListView = inflater.inflate(R.layout.fragment_question_list, container, false);
 		Bundle args = getArguments();
 		String name = args.getString("qListName");
-		TextView tv = (TextView) questionListView.findViewById(R.id.frag_test_TextView);
+		TextView tv = (TextView) questionListView.findViewById(R.id.selected_question_list);
 		if(name!=null)
 			tv.setText(name);
 		else

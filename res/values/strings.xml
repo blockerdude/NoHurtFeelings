@@ -20,7 +20,7 @@
     <string name="account_name">Account Name:</string>
     <string name="account_options">Account Options</string>
     <string name="question_lists">Question Lists</string>
-    <string name="question_list_introduction">Create and edit your question lists</string>
+    <string name="question_lists_introduction">Create and edit your question lists</string>
     <color name="yellow">#FFFF66</color>
     <color name="purple">#CC00FF</color>
     <string name="add">Add</string>
@@ -39,5 +39,6 @@
     <string name="login">Login</string>
     <string name="age">Age</string>
     <string name="account_creation">Account Creation</string>
+    <string name="question_list_intro">Look over all of the questions in the list</string>
 
 </resources>

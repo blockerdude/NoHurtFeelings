@@ -10,7 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/question_list_introduction"
+        android:text="@string/question_lists_introduction"
         android:textSize="24sp" />
 
     <ScrollView
