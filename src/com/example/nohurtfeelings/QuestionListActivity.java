@@ -27,7 +27,7 @@ public class QuestionListActivity extends FragmentActivity {
 		}
 	}
 	public void clickedQList(View view){
-		setContentView(R.layout.fragment_question_list);
+		setContentView(R.layout.fragment_question);
 		FragmentManager fm = getSupportFragmentManager();
 		Fragment questionListFragment = fm.findFragmentById(R.id.fragment_content);
 		if(questionListFragment == null){

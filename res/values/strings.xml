@@ -39,6 +39,6 @@
     <string name="login">Login</string>
     <string name="age">Age</string>
     <string name="account_creation">Account Creation</string>
-    <string name="question_list_intro">Look over all of the questions in the list</string>
+    <string name="question_intro">Examine and edit a question</string>
 
 </resources>
